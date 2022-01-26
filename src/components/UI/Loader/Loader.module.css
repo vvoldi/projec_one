@@ -1,0 +1,36 @@
+.loader {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin: 30px;
+}
+
+.loader:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: teal transparent teal transparent;
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    25% {
+        transform: rotate(120deg) scale(1.4);
+    }
+
+    50% {
+        transform: rotate(240deg) scale(1.4);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}

@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 0;
+  }
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.App {
+    width: 800px;
+}
+
+.post {
+    display: flex;
+    padding: 15px;
+    border: 2px solid teal;
+    margin-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+.post__btns__conteiner{
+    display: flex;
+    justify-content: flex-end;
+}
+.post__btns {
+    display: flex;
+    margin: 2px;
+}
+.remove-btn {
+    margin-right: 0.5rem;
+}
+
+.post-enter {
+    transform: translateX(-750px);
+}
+
+.post-enter-active {
+    transform: translateX(0);
+    transition: all 500ms ease-in;
+}
+
+.post-exit {
+    opacity: 1;
+}
+
+.post-exit-active {
+    transform: translateX(-750px);
+    transition: all 500ms ease-in;
+}
+.page{
+    margin: 15px 7px 15px 0px;
+    display: inline-block;
+    
+}
+.page__active {
+    border: 2px solid darkgreen;
+    font-weight: bold;
+}
+
+.navbar {
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 10px;  
+    background-color: rgb(0 128 128 / 70%);
+    
+}
+.navbar__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 10px;
+    width: 100vw;
+}
+.navbar__btns button{
+    margin: 5px;
+    background-color: white;
+}
+.navbar__btns a{
+    color: teal;
+    text-decoration: none;
+}
